@@ -1,11 +1,15 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 body{
     background-color: black;
-    margin: auto;
-    width: 80%;
+    margin: 0;
     height: 100vh;
     display: grid;
     place-items: center;
-
+    overflow: hidden;
     font-family: Helvetica;
     background: url(../images/wp1955353-jiu-jitsu-wallpaper-hd.png)center;
     background-size: cover;
