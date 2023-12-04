@@ -1,0 +1,57 @@
+body{
+    background-color: black;
+    margin: auto;
+    width: 80%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+
+    font-family: Helvetica;
+    background: url(../images/wp1955353-jiu-jitsu-wallpaper-hd.png)center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    position: relative;
+    height: 175px;
+    display: flex;
+    z-index: 1;
+    padding-bottom: 40px;
+    transition: height 0.3s ease;
+    
+}
+
+.logo2{
+    position: absolute;
+    height: 420px;
+    display: flex;
+    z-index: 0;
+    animation: rotate 20s linear infinite;
+    transition: height 0.3s ease;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 600px) {
+    .logo{
+        height: 140px;
+        padding-bottom: 30px;   
+    }
+    
+    .logo2{
+        height: 300px;
+    }
+}
