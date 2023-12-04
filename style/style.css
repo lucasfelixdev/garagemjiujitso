@@ -12,9 +12,9 @@ body{
     place-items: center;
     overflow: hidden;
     font-family: Helvetica;
-    background: url(../images/wp1955353-jiu-jitsu-wallpaper-hd.png)center;
+    /* background: url(../images/wp1955353-jiu-jitsu-wallpaper-hd.png)center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 section{
     display: flex;
