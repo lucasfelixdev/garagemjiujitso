@@ -5,3 +5,4 @@ const ele = document.querySelectorAll('span');
 for(var i = 1;i<ele.length;i++){
     ele[i].style.transform="rotate("+i*4.8+"deg)";
 }
+
