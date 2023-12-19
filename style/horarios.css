@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&family=Inter+Tight:wght@200;400;500;600&family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Inter Tight', sans-serif;
+
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-items: baseline;
+
+    gap: 20px;
+    flex-wrap: wrap;
+
+    height: 100vh;
+    margin: auto;
+    width: 80%;
+    color: aliceblue;
+    background-color: black;
+
+    position: relative;
+}
+
+
+
+.hora{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 181px;
+    height: 55.81px;
+    background-color: #E73037;
+    border-radius: 0 0 4px 4px;
+    margin-bottom: 15px;
+}
+
+h1{
+    font-size: 29px;
+    font-weight: bold;
+}
+
+.pHora{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 27px;
+    border: #E73037 1px solid;
+    border-radius: 13px 13px 0 0;
+}
+p{  
+    letter-spacing: 5px;
+    font-weight: 600;
+    font-size: 10px;
+    text-align: center;
+    color: #E73037;
+}
+
+.prof{
+    margin-top: 8px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 27px;
+    background-color: whitesmoke;
+    border-radius: 6px;
+}
+
+.prof h2{
+    font-weight: 400;
+    font-size: 16.98px;
+}
+
+.border{
+    display: none;
+    position: absolute;
+    border: #E73037 2px solid;
+    width: 329px;
+    height: 626px;
+    border-radius: 50px;
+    top: 12.5%;
+}
+
+@media (max-width: 476px){
+ .border{
+    transition: 1s linear;
+    display:inline-block;
+
+ }
+}
