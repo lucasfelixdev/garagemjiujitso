@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro&family=Inter+Tight:wght@200;400;500;600&family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
 
+html{
+    background-color: black;
+}
 *{
     margin: 0;
     padding: 0;
