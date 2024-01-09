@@ -1,23 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro&family=Inter+Tight:wght@200;400;500;600&family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
 
+html{
+    background-color: black;
+}
 *{
     margin: 0;
     padding: 0;
 }
 body{
-    overflow: hidden;
+    font-family: 'Inter', Helvetica;
 }
 
 .tbody{
     color: aliceblue;
-    background-color: black;
-    height: 100vh;
+    /* background-color: black; */
     display: flex;
+    height: 70vh;
     justify-content: center;
     align-items: center;
+    background-image: url(../images/wp1955353-jiu-jitsu-wallpaper-hd.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position:right top;
 }
-
-
 
 .hora{
     display: flex;
@@ -45,6 +51,7 @@ h1{
     border: #E73037 1px solid;
     border-radius: 13px 13px 0 0;
 }
+
 p{  
     z-index: 0;
     position: relative;
@@ -88,23 +95,32 @@ p{
 
     gap: 20px;
     flex-wrap: wrap;
-
-    height: 100vh;
-    margin: auto;
+    height: 90vh;
     width: 80%;
     color: aliceblue;
 
     position: relative;
-    position: relative;
 }
 
 .border{
+    transition: 1s linear forward;
     display: none;
     position:absolute;
     border: #E73037 2px solid;
     width: 329px;
     height: 626px;
     border-radius: 50px;
+    animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-10px);
+    }
 }
 
 main{
@@ -115,8 +131,95 @@ main section{
     background-color: aliceblue;
 }
 
+
+
+
+nav{
+    border-top: solid 5px #232323;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(19, 19, 19);
+    color: aliceblue;
+}
+
+nav a {
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    transition: 0.1s linear;
+}
+
+nav a:hover{
+    color: #ff343b;
+}
+
+.navBar{
+    display: flex;
+    height: 100%;
+    margin: auto;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navBar ul{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+
+
+.barRed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: clamp(10.5em, 4.2em + 4vw, 6.5em);
+
+    background-image: url(../images/barRed.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.barRed h1{
+    text-align: center;
+    width: 50%;
+    position: relative;
+    font-size: clamp(1.6em, 1em + 1vw, 2.6em);
+    animation: textAnima 1.2s ease-in forwards;
+}
+@keyframes textAnima {
+    from {
+      opacity: 10%;  
+      bottom: -30px;
+    }
+    to {
+      bottom: 0;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 476px){
- .border{
+    .tbody{
+        height: 90vh;
+    }
+    .border{
     transition: 1s linear;
     display:inline-block;
 
